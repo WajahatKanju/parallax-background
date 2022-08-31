@@ -14,9 +14,9 @@ let x2 = -2400;
 const animate = _ => {
   requestAnimationFrame(animate);
   ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-  ctx.drawImage(image_4, x, 0);
   ctx.drawImage(image_4, x+2400, 0);
-  if(x < -2400) x = 0;
+  ctx.drawImage(image_4, x, 0);
+  if(x < -2400) x = 2400 + x;
   else x-=GAME_SPEED;
 
 
