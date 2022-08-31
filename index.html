@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <script type="module" src="main.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>parallax Background</title>
-</head>
-<body>
-    <canvas width='400px' height='400'></canvas>
-</body>
+  </head>
+  <body>
+    <div class="container">
+      
+      <canvas width="400px" height="400"> </canvas>
+			<div id="slider-container">
+        <label id="slider-label" for="slider"></label>
+        <input
+          type="range"
+          name="slider"
+          id="slider"
+					value="10"
+					min="0"
+          max="20"
+        />
+      </div>
+		</div>
+  </body>
 </html>
